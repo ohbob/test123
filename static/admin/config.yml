@@ -18,12 +18,30 @@ collections:
     identifier_field: title
     label: Posts # used in the ui
     folder: src/content/posts # path to the folder where the documents are stored
+    media_folder: /static/media/posts
     create: true # allow users to create new documents in this collection
     slug: '{{slug}}' # filename template, e.g. YYYY-MM-DD-title.md
     fields: # fields for each document in front matter
       - { label: Title, name: title, widget: string }
       - { label: Description, name: description, widget: text }
       - { label: Image, name: image, widget: image }
+      - { label: Image2, name: image2, widget: image }
       - { label: Draft, name: draft, widget: boolean, default: true }
       - { label: Optional, name: optional, widget: string, required: false }
       - { label: 'Content', name: 'body', widget: 'markdown' }
+  - name: categories
+    identifier_field: title
+    label: Categories
+    folder: src/content/categories
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+  - name: invoice
+    identifier_field: title
+    label: Invoices
+    folder: src/content/invoices
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Company, name: company, widget: string}
+      - {label: Price, name: Price, widget: number}

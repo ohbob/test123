@@ -1,0 +1,16 @@
+{
+	"/": [
+		"src/routes/+layout.server.ts",
+		"src/routes/+layout.server.ts"
+	],
+	"/images/[basename].[type]@[query].[ending]": [
+		"src/routes/images/[basename].[type]@[query].[ending]/+server.ts"
+	],
+	"/images/[basename].[type]": [
+		"src/routes/images/[basename].[type]/+server.ts"
+	],
+	"/post/[slug]": [
+		"src/routes/post/[slug]/+page.server.ts",
+		"src/routes/+layout.server.ts"
+	]
+}

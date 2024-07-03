@@ -1,22 +1,23 @@
 ---
-title: This is a Title
-description: This is a description
+title: Hey man whats up?
+description: This is a general test
 image: /images/demo-image.jpg
-draft: false
-optional: ''
+draft: true
+optional: this is optional information
 ---
-
 # This is a heading
 
-this is _some_ **text** that may be both **bold _and italic_**.
+this is *some* **text** that may be both **bold *and italic***.
 
 ## And another heading
 
 - this is a list
 - with some
 - items
-  - and some
-  - subitems
+- and some
+- subitems
+
+What is this thing, i don't understand?
 
 1. this is a numbered list
 2. it has numbers
